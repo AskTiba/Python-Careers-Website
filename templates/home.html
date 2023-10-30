@@ -2,16 +2,36 @@
 <html>
   <head>
     <title>Careers</title>
+    <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
-    <h1>Zugzwang-Careers</h1>
-    <img src="" alt="">
-    <p>
-      We believe that every individual deserves the chance to shine in their
-      chosen career. That's why we provide you with a user-friendly, intuitive
-      platform that is designed to make your job search and career development
-      as smooth as possible. Our mission is to empower you to achieve your
-      professional aspirations, and we're here to make that happen.
-    </p>
+    <div id="container">
+      <h1>{{company_name}}</h1>
+      <img
+        class="img-fluid"
+        id="banner"
+        src="http://127.0.0.1:5000/static/wall.jpg"
+        alt=""
+        height="220"
+        width="600"
+      />
+      <h2>About {{company_name}}</h2>
+      <p>
+        We believe that every individual deserves the chance to shine in their
+        chosen career. That's why we provide you with a user-friendly, intuitive
+        platform that is designed to make your job search and career development
+        as smooth as possible. Our mission is to empower you to achieve your
+        professional aspirations, and we're here to make that happen.
+      </p>
+      <h2>Open positions</h2>
+      <h2>TODO-Show the job here</h2>
+      <div class="">
+        {%for job in work%} {%include 'jobitem.html'%} {%endfor%}
+      </div>
+      <div class="btn">
+        <button>Contact Us</button>
+        <p class="copyright">Copyright 2023, Tiba</p>
+      </div>
+    </div>
   </body>
 </html>
