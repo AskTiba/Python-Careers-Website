@@ -4,7 +4,11 @@
     <div><b>Location</b>: {{job["location"]}}</div>
   </div>
   <div class="col-2">
-    <button type="button" class="btn btn-primary">Apply</button>
+    <a
+      href="mailto:anthonyngisiro@gmail.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Application%20for%20{{job["title"]}}&body=Body-goes-here"
+      class="btn btn-primary"
+      >Apply</a
+    >
   </div>
 </div>
 <hr />
