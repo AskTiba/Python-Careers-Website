@@ -27,7 +27,7 @@ jobs = [
 
 @app.route('/')
 def hello():
-    return render_template('home.html', work=jobs, company_name="Jolly Job Seekers, Inc.")
+    return render_template('home.html', work=jobs, company_name="Opportunity Oasis")
 
 if __name__ == '__main__':
     app.run(debug=True)
